@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+}
+
+/* HERO */
+.contact-hero {
+    position: relative;
+    height: 52vh;
+    background: url('/assets/contact-bg.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-text {
+    position: relative;
+    color: #fff;
+    animation: fadeDown 1s ease;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-text p {
+    opacity: 0.9;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    transition: transform .4s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+.contact-card h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    font-size: 15px;
+}
+
+.contact-card i {
+    color: #f4b400;
+    margin-right: 8px;
+}
+
+/* MAP */
+.map-box {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+/* BUTTON */
+.submit-btn {
+    font-weight: 600;
+    padding: 12px;
+    transition: all .3s ease;
+}
+
+.submit-btn:hover {
+    background: #000;
+    color: #f4b400;
+}
+
+/* ANIMATIONS */
+.slide-left {
+    animation: slideLeft 1s ease;
+}
+
+.slide-right {
+    animation: slideRight 1s ease;
+}
+
+@keyframes fadeDown {
+    from { opacity:0; transform: translateY(-30px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+    from { opacity:0; transform: translateX(-40px); }
+    to { opacity:1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    from { opacity:0; transform: translateX(40px); }
+    to { opacity:1; transform: translateX(0); }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}

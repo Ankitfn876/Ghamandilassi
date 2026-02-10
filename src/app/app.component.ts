@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Router, RouterOutlet } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [LayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ghamandi-lassi';
+  constructor(private router: Router) {
+    if (location.pathname === '/' || location.pathname === '') {
+      this.router.navigate(['/home']);
+    }
+  }
 }

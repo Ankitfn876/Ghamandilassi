@@ -1,0 +1,56 @@
+/* =========================
+   NAVBAR FIX (IMPORTANT)
+========================= */
+
+/* Root navbar */
+.navbar-glass {
+    position: fixed;          /* 🔑 FIX */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;             /* 🔑 FIX: reserve height */
+    background: rgba(255, 255, 255, 0.97); /* NOT transparent */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1050;            /* Above hero */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shadow when scrolling */
+.navbar-glass.scrolled {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Brand */
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000 !important;
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+/* Links */
+.nav-link {
+    font-weight: 500;
+    color: #222 !important;
+    margin-left: 16px;
+}
+
+/* Buttons */
+.btn-brand {
+    background: var(--gold);
+    color: #000;
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-weight: 600;
+}
+
+.btn-brand:hover {
+    background: #e6ac00;
+    color: #000;
+}
+
+
