@@ -1,0 +1,1 @@
+import{a}from"./chunk-ZLG3OGV2.js";import"./chunk-BJUWLRI7.js";import{Ia as o,wa as t}from"./chunk-BS7LJDAC.js";var s=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-franchise"]],decls:1,vars:0,template:function(e,p){e&1&&o(0,"app-headers")},dependencies:[a],encapsulation:2})};export{s as FranchiseComponent};
